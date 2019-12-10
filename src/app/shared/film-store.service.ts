@@ -31,7 +31,7 @@ export class FilmStoreService {
         description: 'Award-winning crime drama directed by David O. Russell and starring Christian Bale and Bradley Cooper....',
       }
     ];
-   }
+  }
 
    getAll(): Film[] {
      return this.films;

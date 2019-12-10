@@ -15,5 +15,4 @@ export class FilmListComponent implements OnInit {
   ngOnInit() {
     this.films = this.fs.getAll();
   }
-
 }
