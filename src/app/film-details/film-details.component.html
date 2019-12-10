@@ -22,7 +22,7 @@
       <i class="yellow star icon"
         *ngFor="let r of getRating(film.rating)"></i>
     </div>
-    <div class="four wide column">
+    <div *ngIf="film.awarded" class="four wide column">
       <h4>Verliehen</h4>
       {{ film.awarded }}
     </div>
@@ -33,6 +33,7 @@
     <img *ngFor="let thumbnail of film.thumbnails"
       [src]="thumbnail">
   </div>
+</div>
 
 <ng-template #loading>
   <div class="ui active centered inline loader"></div>
